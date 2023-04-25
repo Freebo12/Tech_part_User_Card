@@ -8,7 +8,7 @@ export const UserBox = styled.div`
   width: 380px;
   height: 460px;
   border-radius: 20px;
-  background-image: url('../../img/background.png'), url(${goItLogo});
+  background-image: url('${background}'), url(${goItLogo});
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
