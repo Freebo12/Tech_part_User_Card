@@ -5,20 +5,10 @@ import {
   BtnContent,
   ImgUser,
   ImgBox,
-  UserName,
   SubBox,
   Line,
 } from './UserCardStyled';
-import { useState, useEffect } from 'react';
-
-// const getFollowerLocal = () => {
-//   const saveFollower = localStorage.getItem('uss');
-
-//   if (saveFollower !== null) {
-//     const parsedFollowers = JSON.parse(saveFollower);
-//     return parsedFollowers;
-//   }
-// };
+import { useState } from 'react';
 
 export const UserCard = ({ user }) => {
   const [buttonText, setButtonText] = useState('Follow');
@@ -45,8 +35,6 @@ export const UserCard = ({ user }) => {
         <Line> </Line>
       </ImgBox>
       <SubBox>
-        {/* <UserName>{user.user}</UserName> */}
-
         <UserTitle>{user.tweets} Tweets</UserTitle>
 
         <UserTitle>{followers} Followers</UserTitle>
