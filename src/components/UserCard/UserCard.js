@@ -7,6 +7,7 @@ import {
   ImgBox,
   SubBox,
   Line,
+  LogoGoIt,
 } from './UserCardStyled';
 import { useState } from 'react';
 
@@ -29,6 +30,7 @@ export const UserCard = ({ user }) => {
 
   return (
     <UserBox>
+      <LogoGoIt></LogoGoIt>
       <ImgBox>
         <ImgUser src={user.avatar} alt="photo user" />
         <Line> </Line>

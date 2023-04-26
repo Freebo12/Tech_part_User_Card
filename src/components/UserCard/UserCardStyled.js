@@ -10,17 +10,14 @@ export const UserBox = styled.div`
   height: 460px;
   border-radius: 20px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url(${background}), url(${goItLogo});
-  background: linear-gradient(
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+
+  background-image: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
     #5736a3 54.28%,
     #4b2a99 78.99%
   );
-  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
 `;
 
 export const UserName = styled.h1`
@@ -97,6 +94,9 @@ export const ImgBox = styled.div`
   display: grid;
   grid-column: 1/2;
   grid-row: 1/2;
+  background-image: url(${background});
+  background-repeat: no-repeat;
+  background-position: 28px 36px;
 `;
 
 export const SubBox = styled.div`
@@ -136,4 +136,15 @@ export const Line = styled.div`
       inset 0px -1.71846px 3.43693px #ae7be3,
       inset 0px 3.43693px 2.5777px #fbf8ff;
   }
+`;
+
+export const LogoGoIt = styled.div`
+  background-image: url(${goItLogo});
+  background-repeat: no-repeat;
+  background-position: 28px 36px;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  width: 120px;
+  height: 75px;
 `;
