@@ -2,6 +2,7 @@ import { UserList } from './UserLIst/UserList';
 import { useEffect, useState } from 'react';
 import { getUsers } from '../services/getUser';
 import { BtnLoadMore } from './BtnLoadMore/BtnLoadMore';
+import { GlobalStyle } from './GlobalStyle/GlobalStyle';
 
 export const App = () => {
   const [users, setUsers] = useState([]);
@@ -48,9 +49,10 @@ export const App = () => {
   };
 
   return (
-    <section>
+    <>
+      <GlobalStyle />
       <UserList users={users} />
       {users.length !== 0 && <BtnLoadMore loadMore={loadMore} />}
-    </section>
+    </>
   );
 };
