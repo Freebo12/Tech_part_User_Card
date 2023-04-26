@@ -26,25 +26,6 @@ export const App = () => {
       .catch(error => setError(error));
   }, [page]);
 
-  // useEffect(() => {
-  //   getUsers(1)
-  //     .then(resp => resp.json())
-  //     .then(items => {
-  //       setUsers([...items]);
-  //       setPage(1);
-  //     })
-  //     .catch(error => setError(error));
-  // }, []);
-
-  // useEffect(() => {
-  //   getUsers(page)
-  //     .then(resp => resp.json())
-  //     .then(items => {
-  //       setUsers([...users, ...items]);
-  //     })
-  //     .catch(error => setError(error));
-  // }, [page]);
-
   const loadMore = () => {
     setPage(prevPage => prevPage + 1);
   };
