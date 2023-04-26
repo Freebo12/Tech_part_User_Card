@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { getUsers } from '../services/getUser';
 import { BtnLoadMore } from './BtnLoadMore/BtnLoadMore';
 import { GlobalStyle } from './GlobalStyle/GlobalStyle';
+import { SectionApp } from './App.styled';
 
 export const App = () => {
   const [users, setUsers] = useState([]);
@@ -49,10 +50,10 @@ export const App = () => {
   };
 
   return (
-    <>
+    <SectionApp>
       <GlobalStyle />
       <UserList users={users} />
       {users.length !== 0 && <BtnLoadMore loadMore={loadMore} />}
-    </>
+    </SectionApp>
   );
 };
