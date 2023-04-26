@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const BtnLoad = styled.button`
+  cursor: pointer;
   border: none;
   display: block;
   margin-left: auto;
@@ -10,6 +11,11 @@ export const BtnLoad = styled.button`
   background: #ebd8ff;
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
   border-radius: 10.3108px;
+  transition: 300ms;
+
+  :hover {
+    background: #5cd3a8;
+  }
 
   :active {
     background: #5cd3a8;
