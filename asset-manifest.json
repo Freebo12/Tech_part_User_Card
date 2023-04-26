@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/Tech_part_User_Card/static/js/main.c3990b00.js",
+    "main.js": "/Tech_part_User_Card/static/js/main.4ed1f547.js",
     "static/media/background.png": "/Tech_part_User_Card/static/media/background.032662a2a907475127d7.png",
     "index.html": "/Tech_part_User_Card/index.html",
-    "main.c3990b00.js.map": "/Tech_part_User_Card/static/js/main.c3990b00.js.map"
+    "main.4ed1f547.js.map": "/Tech_part_User_Card/static/js/main.4ed1f547.js.map"
   },
   "entrypoints": [
-    "static/js/main.c3990b00.js"
+    "static/js/main.4ed1f547.js"
   ]
 }
