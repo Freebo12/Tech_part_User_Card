@@ -50,7 +50,7 @@ export const App = () => {
   return (
     <section>
       <UserList users={users} />
-      <BtnLoadMore loadMore={loadMore} />
+      {users.length !== 0 && <BtnLoadMore loadMore={loadMore} />}
     </section>
   );
 };

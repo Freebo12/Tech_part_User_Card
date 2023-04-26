@@ -4,11 +4,16 @@ import goItLogo from '../../img/Vector.png';
 
 export const UserBox = styled.div`
   position: relative;
+  text-align: center;
 
   width: 380px;
   height: 460px;
   border-radius: 20px;
-  background-image: url('${background}'), url(${goItLogo});
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(${background}), url(${goItLogo});
   background: linear-gradient(
     114.99deg,
     #471ca9 -0.99%,
@@ -43,6 +48,10 @@ export const UserTitle = styled.h2`
 `;
 
 export const BtnFollow = styled.button`
+  border: none;
+  position: absolute;
+  left: 92px;
+  bottom: 36px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -70,22 +79,61 @@ export const BtnContent = styled.span`
 `;
 
 export const ImgUser = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 178px;
   width: 62px;
   height: 62px;
   border-radius: 50%;
   padding: 9px;
-  /* padding-top: 178px; */
-`;
-
-export const ImgBox = styled.div`
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
   background: #ebd8ff;
   box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
     inset 0px -2.19582px 4.39163px #ae7be3,
     inset 0px 4.39163px 3.29372px #fbf8ff;
-  margin-left: auto;
-  margin-right: auto;
-  /* padding-top: 178px; */
+`;
+
+export const ImgBox = styled.div`
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+`;
+
+export const SubBox = styled.div`
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
+`;
+
+export const Line = styled.div`
+  position: relative;
+  display: inline-block;
+
+  :before {
+    content: ' ';
+    background: #33ccff;
+    width: 150px;
+    height: 8px;
+    top: -40px;
+    right: 230px;
+    position: absolute;
+    background: #ebd8ff;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+      inset 0px -1.71846px 3.43693px #ae7be3,
+      inset 0px 3.43693px 2.5777px #fbf8ff;
+  }
+
+  :after {
+    content: ' ';
+    background: #333333;
+    width: 150px;
+    height: 8px;
+    top: -40px;
+    right: 0;
+    position: absolute;
+    background: #ebd8ff;
+    box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+      inset 0px -1.71846px 3.43693px #ae7be3,
+      inset 0px 3.43693px 2.5777px #fbf8ff;
+  }
 `;
