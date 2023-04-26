@@ -17,11 +17,10 @@ export const UserCard = ({ user }) => {
 
   const handleClick = () => {
     setActiveBtn(prev => !prev);
-    {
-      buttonText === 'Follow'
-        ? setButtonText('Following')
-        : setButtonText('Follow');
-    }
+
+    buttonText === 'Follow'
+      ? setButtonText('Following')
+      : setButtonText('Follow');
 
     buttonText === 'Follow'
       ? setFollowers(followers + 1)
